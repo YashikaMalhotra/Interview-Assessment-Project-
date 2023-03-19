@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height:2;
+font-family: 'Poppins';
+list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+p{
+font-size: 0.8rem;
+}
+body{
+    width: 100%;
+    background: #041334;
+    padding: 1rem auto;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+#logo{
+    color: #FBC315;
+letter-spacing: 0.1rem;
+}
+
+nav{
+    margin: 0 auto;
+    display: grid;
+    font-size: 0.7rem;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+nav ul{
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#mainPage, #thirdPage{
+    width: 80%;
+    color: #ffffff;
+    margin: 3rem auto;
+}
+#mainPage p{
+line-height: 2;
+font-size: 1rem;
+}
+#mainPage table{
+    width: 100%;
+    padding: 1rem; 
+    margin: 0 auto;
+}
+#mainPage td{
+    padding-left: 3rem;
+    text-align: justify;
+}
+#mainPage td:nth-child(3){
+    text-align: center;
+    padding-left: 0;
+}
+#mainPage td:last-child{
+    text-align: center;
+    padding-left: 0;
+}
+#mainPage img{
+    width: 20%;
+    height: 100%;
+}
+#mainPage td span{
+    font-size: 0.7rem;
+    color: grey;
+    padding-left: 1rem;
+}
+.green{
+color: #14FF00;
+}
+#buttonTd{
+    background: linear-gradient(90deg, #3DD8EE 0%, #0997E8 100%);
+border-radius: 8px;
+padding: 0.3rem 2rem;
+border: none;
+margin-top: 2rem;
+color: white;
+cursor: pointer;
+}
+
+#secondPage{
+    background:#00092A ;
+    padding: 1rem 10rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    width: 100%;
+    display: grid;
+    }
+
+#item2{
+    padding: 0 1rem;
+}
+.item2_td{
+    padding: 0 1rem;
+    background: #0F1535;
+}
+.parent ul li{
+    list-style-type: '✔';
+    padding-left: 0.5rem;
+    margin: 1rem 0 1rem 3rem ;
+}
+.parent ul::marker{
+    background-color: white;
+}
+.parent table tr{
+    padding-bottom: 1rem;
+}
+
+#thirdPage table{
+    color: white;
+    width: 50%;
+    padding: 1rem;
+    margin: 0 auto;
+    background: linear-gradient(180.04deg, rgba(4, 19, 52, 0.78) -3.16%, rgba(15, 37, 84, 0.62) 99.42%);
+border: 2px solid #142346;
+border-radius: 50px;
+}
+
+#thirdPage table tr td{
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+th{
+    padding: 0.7rem;
+}
+#thirdPage table img{
+    border-radius: 50%;
+    width: 80%; align-items: center;
+}
+ span{
+    color: #00FF47;
+}
+#footerPage{
+    background:#00092A ;   
+     width: 100%;
+    color: #ffffff;
+    margin: 3rem auto;
+    margin-bottom: 0;
+    padding: 1rem 5rem;
+}
+#footerPage table{
+    width: 100%;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    
+}
+#footerPage tr{
+    text-align: justify;
+}
+#footerPage td{   
+     padding: 0 1rem;
+    font-size: 0.7rem;
+}
+.red{
+    color: red;
+}
+
+#copyright{
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #FFFFFF;
+}
+
+/*MEDIA QUERIES */
+@media screen and (max-width: 2600px) and (min-width: 1600px){
+    #thirdPage table{
+        width: 40%;
+    }
+    #thirdPage table img{
+        width: 40%;
+    }
+    nav ul{
+        display: flex;
+    }
+    li{
+        flex-direction: row;
+    }
+    .parent{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    #footerPage{
+        margin: 3rem auto;
+        padding: 1rem 2rem;
+    }
+    #secondPage{
+        padding: 1rem 6rem;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1024px){
+    #thirdPage table{
+        width: 60%;
+    }
+nav ul{
+    display: flex;
+}
+#thirdPage table img{
+    width: 40%;
+}
+li{
+    flex-direction: row;
+}
+    .parent{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    #thirdPage table img{
+        border-radius: 50%;
+        width: 60%;
+    }
+    #footerPage{
+        margin: 3rem auto;
+        padding: 1rem 2rem;
+    }
+    #secondPage{
+        padding: 1rem 6rem;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width:768px){
+    nav ul{
+        display: flex;
+    }
+    li{
+        flex-direction: row;
+    }
+    #thirdPage table{
+        width: 40%;
+    }
+    .parent div{
+        margin-top: 3rem;
+    }
+    #thirdPage table img{
+        width: 90%;
+    }
+    #footerPage{
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+    #footerPage table{
+        width: 100%;
+        padding: 1rem;
+    }
+    #secondPage{
+        padding: 1rem 5rem;
+    }
+}
+@media screen and (max-width: 768px) and (min-width:630px){
+    #mainPage, #thirdPage, #secondPage{
+        width: 100%;
+    }
+main{
+    padding: 1rem;
+    overflow: auto;
+}
+    #thirdPage {
+        padding: 1rem;
+    }
+    #thirdPage table {
+      width: 37%;
+    }
+    #thirdPage table img{
+        border-radius: 50%;
+        width: 70%;
+    }
+    .parent div{
+        margin-top: 1rem;
+    }
+    #footerPage{
+        padding: 1rem;
+    }
+    #footerPage table{
+        width: 100%;
+        padding: 1rem;
+    }
+    #mainPage{
+        padding: 1rem; 
+    }
+    #secondPage{
+        background:#00092A ;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 630px) and (min-width:200px){
+   nav ul li{
+        flex-direction: column;
+    }
+    #mainPage, #thirdPage, #secondPage{
+        width: 100%;}
+    main{
+    overflow-x: auto;
+}
+#mainPage{
+    padding: 1rem; 
+}
+.parent div{
+    margin-top: 1rem;
+}
+.parent div{
+    margin-top: 1rem;
+}
+    #thirdPage {
+        padding: 1rem;
+    }
+    #thirdPage table {
+        width: 80%;
+      }
+      #thirdPage table img{
+          border-radius: 50%;
+          width: 50%;
+      }
+
+    #footerPage{
+        padding: 1rem;
+    }
+    #footerPage table{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #secondPage{
+        background:#00092A ;
+        padding: 1rem;
+    }
+}
